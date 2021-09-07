@@ -13,7 +13,7 @@ export const GifApp = () => {
             
             <AddCategoria setC={ setCategoria }/>
         
-            <ol>
+            <ol className="position-relative vh-100">
                 {
                     categoria.map(categoria => (
                         <GifGrid 

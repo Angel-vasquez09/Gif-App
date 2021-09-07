@@ -10,7 +10,7 @@ export const GifGrid = ({ categoria }) => {
 
     return (
         <>
-            {loading && <p>Loading...</p>}
+            {loading && <div className="position-absolute end-50 top-50 spinner-border text-light" role="status"><span className="visually-hidden">Loading...</span></div>}
 
             <div className="card-grid animate__animated animate__fadeIn">
                 {
