@@ -1,13 +1,80 @@
-body {
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  padding: 2rem;
+  background: #020025;
+}
+
+
+/* 
+* Estilos de el componente GifApp
+*/
+h1{
+  text-align: center;
+  color: white;
+}
+
+
+
+/* 
+* Estilos de el componente AddCategoria
+*/
+form input{
+  width: 100%;
+  height: 3rem;
+  border: 1px solid black;
+  padding-left: 1rem;
+  outline: none;
+  font-size: 15px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #bfbfbf;
+}
+
+
+/* 
+* Estilos de el componente GifGrid
+*/
+.card-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+
+
+/* 
+* Estilos de el componente GifGridItem
+*/
+.card{
+  position: relative;
+  
+  align-content: center;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  border-radius:1rem;
+  overflow: hidden;
+  box-shadow:  5px 5px 10px #01000f,-5px -5px 10px #03003b;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.card:hover{
+  transform: scale(1.2);
+  z-index: 100;
+
+}
+.card img{
+  max-height: 170px;
+  border: 2px solid white;
+  border-radius: 1rem;
 }
